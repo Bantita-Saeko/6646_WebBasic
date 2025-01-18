@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <title>Table Rabbit</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .main-table {
+            width: 100%;
+            border-collapse: collapse;
+            
+        }
+        .img-table {
+            width: 100%;
+            border-spacing: 30px;
+            text-align: center;
+            background-color: rgb(186, 202, 220);
+        }
+        .menu {
+            vertical-align: top;
+            width: 15%;
+            background-color: rgb(244, 244, 244);
+            margin: 0;
+            padding: 0;
+            line-height: 1.5rem;
+        }
+        .RabbitTabs {
+            object-fit: cover;
+        }
+        .footer {
+            background: #15376a;
+            text-align: center;
+            color: white;
+        }
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 25px;
+        }
+        .List-Menu {
+            text-decoration: none;
+        }
+        .List-Menu:hover {
+            color: black;
+            font-size: 18px;
+        }
+        a {
+            text-decoration: none;
+        }
+        a:hover {
+            color: #fffafa;
+        }
+        .img-person {
+            object-fit: cover;
+            width: 330px;
+            height: 300px;
+            border: 10px solid white;
+            border-radius: 20px;
+            box-sizing: border-box;
+            box-shadow: 2px 2px rgb(101, 101, 101);
+        }
+        .des {
+            font-size: 15px;
+            background-color: #fffafa;
+            border-radius: 10px;
+            border: 1px solid rgb(255, 255, 255);
+            color: #0b4eb2;
+            padding: 5px 10px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        .des:hover {
+            background-color: #0b4eb2;
+            color: #ffffff;
+            cursor: pointer;
+        }
+        .fa-solid {
+            color: #000000;
+            margin-right: 10px;
+            font-size: 18px;
+        }
+        .Paragraph {
+            background-color: white;
+            border-radius: 10px;
+            box-sizing: border-box;
+            box-shadow: 2px 2px rgb(74, 74, 74);
+        }
+
+    </style>
+</head>
+<body>
+    <table class = "main-table">
+        <!-- Heading -->
+        <tr>
+            <td colspan="2">
+                <img src="images/RabbitTabs.png" alt="RabbitTabs" width="100%">
+            </td>
+        </tr>
+
+        <!-- Content -->
+        <tr>
+            <!-- Menu -->
+            <td rowspan="2" class="menu">
+                <ul>
+                    <li><i class="fa-solid fa-house"></i>
+                        <a href="#" class="List-Menu">Home</a></li>
+                    <li><i class="fa-solid fa-cart-shopping"></i>
+                        <a href="#" class="List-Menu">Shop</a></li>
+                    <li><i class="fa-solid fa-comments"></i>
+                        <a href="#" class="List-Menu">Community</a></li>
+                    <li><i class="fa-solid fa-pager"></i>
+                        <a href="#" class="List-Menu">About</a></li>
+                    <li><i class="fa-solid fa-circle-info"></i>
+                        <a href="#" class="List-Menu">Contact</a></li>
+                </ul>
+            </td>
+            <td>
+                <!-- Table Of Image And Paragraph -->
+                <table class = "img-table" >
+                    <!-- Picture123 -->
+                    <tr>
+                        <td>
+                            <img src="images/White.jpg" alt="WhiteRabbit" class="img-person"> <br>
+                            <button class="des" >
+                                <a href="RabbitInfo/White_Rabbit1.html" target="_self">Read more</a>
+                            </button>
+                        </td>
+                        <td>
+                            <img src="images/brown_straw.jpeg" alt="Brown_Strawberry" class="img-person"> <br>
+                            <button class="des">
+                                <a href="RabbitInfo/Brown_Rabbit.html" target="_self">Read more</a>
+                            </button>
+                        </td>
+                        <td>
+                            <img src="images/DarkBrown.jpg" alt="DarkBrownRabbit" class="img-person"> <br>
+                            <button class="des">
+                                <a href="RabbitInfo/Dark-Brown_Rabbit.html" target="_self">Read more</a>
+                            </button>
+                        </td>
+                    </tr> 
+                    <!-- Picture 456 -->
+                    <tr>
+                        <td>
+                            <img src="images/White_Black.jpg" alt="White_BlackRabbit" class="img-person"> <br>
+                            <button class="des">
+                                <a href="RabbitInfo/White-Black_Rabbit.html" target="_self">Read more</a>
+                            </button>
+                        </td>
+                        <td>
+                            <img src="images/Orange.jpg" alt="OrangeRabbit" class="img-person"> <br>
+                            <button class="des">
+                                <a href="RabbitInfo/Orange_Rabbit.html" target="_self">Read more</a>
+                            </button>
+                        </td>
+                        <td>
+                            <img src="images/Black.jpg" alt="BlackRabbit" class="img-person"> <br>
+                            <button class="des">
+                                <a href="RabbitInfo/Black_Rabbit.html" target="_self">Read more</a>
+                            </button>
+                        </td>
+                    </tr>
+                    <!-- Paragraph -->
+                    <tr>
+                        <td colspan="3" class="Paragraph">
+                            <p >A rabbit is a small, herbivorous mammal known for its long ears,
+                                 strong hind legs, and short tail. They live in burrows for protection 
+                                 from predators and are quick to flee when threatened. 
+                                 Rabbits primarily eat grasses and vegetables and reproduce rapidly, 
+                                 often having large litters of babies. Domesticated rabbits are popular pets 
+                                 and require a balanced diet, regular exercise, and social interaction. 
+                                 They are also featured in many cultural symbols, representing fertility and new beginnings.
+                            </p>
+                        </td>
+                    </tr> 
+                </table>
+            </td>
+        </tr>
+
+        <!-- Footer -->
+        <tr>
+            <td class="footer">
+                <p>Ms.Bantita Saeko 664230019 66/46 <br>
+                   Information Technology, Science and Technology <br>
+                   Nakhon Pathom Rajabhat University
+                </p>
+            </td>
+        </tr>
+    </table>
+    
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <title>Table BND</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .main-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .img-table {
+            width: 100%;
+            border-spacing: 30px;
+            text-align: center;
+            background-color: rgb(186, 202, 220);
+        }
+        .menu {
+            vertical-align: top;
+            width: 15%;
+            background-color: rgb(244, 244, 244);
+            margin: 0;
+            padding: 0;
+            line-height: 1.5rem;
+        }
+        .BNDTab {
+            object-fit: cover;
+        }
+        .footer {
+            background: #15376a;
+            text-align: center;
+            color: white;
+        }
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 25px;
+        }
+        a {
+            text-decoration: none;
+        }
+        a:hover {
+            color: black;
+            font-size: 18px;
+        }
+        .img-person {
+            object-fit: cover;
+            width: 270px;
+            border: 10px solid white;
+            border-radius: 20px;
+            box-sizing: border-box;
+            box-shadow: 2px 2px rgb(101, 101, 101);
+        }
+        .des {
+            font-size: 20px;
+            background-color: #fffafa;
+            border-radius: 10px;
+            border: 1px solid rgb(255, 255, 255);
+            color: #0b4eb2;
+            padding: 5px 10px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        .des:hover {
+            background-color: #0b4eb2;
+            color: #ffffff;
+            cursor: pointer;
+        }
+        .fa-solid {
+            color: #000000;
+            margin-right: 10px;
+            font-size: 18px;
+
+        }
+        .Paragraph {
+            text-align: center;
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-sizing: border-box;
+            box-shadow: 2px 2px rgb(61, 61, 61);
+        }
+
+    </style>
+</head>
+<body>
+    <table class = "main-table">
+        <!-- Heading -->
+        <tr>
+            <td colspan="2">
+                <img src="images/BNDTab.png" alt="BNDTab" width="100%">
+            </td>
+        </tr>
+
+        <!-- Content -->
+        <tr>
+            <!-- Menu -->
+            <td rowspan="2" class="menu">
+                <ul>
+                    <li><i class="fa-solid fa-house"></i>
+                        <a href="#">Home</a></li>
+                    <li><i class="fa-solid fa-cart-shopping"></i>
+                        <a href="#">Shop</a></li>
+                    <li><i class="fa-solid fa-comments"></i>
+                        <a href="#">Community</a></li>
+                    <li><i class="fa-solid fa-pager"></i>
+                        <a href="#">About</a></li>
+                    <li><i class="fa-solid fa-circle-info"></i>
+                        <a href="#">Contact</a></li>
+                </ul>
+            </td>
+            <td>
+                <!-- Table Of Image And Paragraph -->
+                <table class = "img-table" >
+                    <!-- Picture123 -->
+                    <tr>
+                        <td>
+                            <img src="images/Sungho.jpg" alt="Sungho" class="img-person"> <br>
+                            <button class="des">Sungho</button>
+                        </td>
+                        <td>
+                            <img src="images/Riwoo.jpg" alt="Riwoo" class="img-person"> <br>
+                            <button class="des">Riwoo</button>
+                        </td>
+                        <td>
+                            <img src="images/Jaehyun.jpg" alt="Jaehyun" class="img-person"> <br>
+                            <button class="des">Jaehyun</button>
+                        </td>
+                    </tr> 
+                    <!-- Picture 456 -->
+                    <tr>
+                        <td>
+                            <img src="images/Taesan.jpg" alt="Taesan" class="img-person"> <br>
+                            <button class="des">Taesan</button>
+                        </td>
+                        <td>
+                            <img src="images/Leehan.jpg" alt="Leehan" class="img-person"> <br>
+                            <button class="des">Leehan</button>
+                        </td>
+                        <td>
+                            <img src="images/Woonhak.jpg" alt="Woonhak" class="img-person"> <br>
+                            <button class="des">Woonhak</button>
+                        </td>
+                    </tr>
+                    <!-- Paragraph -->
+                    <tr>
+                        <td colspan="3">
+                            <p class="Paragraph">Boynextdoor is a 6-member boy group that debuted on May 30, 2023,
+                                 under KQ Entertainment. The group consists of members
+                                  Sungho, Riwoo, Jaehyun, Taesan, Leehan, and Woonhak. They gained significant attention with their debut album "But I Like You." Boynextdoor is known for their bright and energetic image,
+                                   receiving a lot of love from the public.</p>
+                        </td>
+                    </tr> 
+                </table>
+            </td>
+        </tr>
+
+        <!-- Footer -->
+        <tr>
+            <td class="footer">
+                <p>Ms.Bantita Saeko 664230019 66/46 <br>
+                   Information Technology, Science and Technology <br>
+                   Nakhon Pathom Rajabhat University
+                </p>
+            </td>
+        </tr>
+    </table>
+    
+</body>
+</html>
