@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Form</h1>
+    <h3>Input Element</h3>
+    <p>An <span style="color: brown;">input element</span> can be displayed in many ways, depending on the <span style="color: brown;">type</span> attribute.
+    
+    <!-- fiedldset ใช้คู่กับ legend กลุ่มข้อมูลที่เกี่ยวข้อง -->
+    <fieldset style="background-color: rgb(206, 216, 230);">
+        <legend>Text Field</legend>
+    <!-- action ปลายทางของฟอร์มที่ส่งไป method วิธีการที่ฟอร์ทถูกส่งไป -->
+        <form action="" method="">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname" placeholder="กรุณาป้อนชื่อ" required> <br><br>
+            
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname" placeholder="กรุณาป้อนนามสกุล"> <br><br>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="กรุณาป้อนอีเมล">  <br><br>
+
+            <label for="age0">Age</label>
+            <input type="number" name="age0" id="age0" min="0" max="100"> <br><br>
+            
+            <label for="age1">Age Readonly</label>
+            <input type="number" name="age1" id="age1" min="0" max="100" value="8" readonly> <br><br>
+
+            <label for="pwd">Password</label>
+            <input type="password" name="pwd" id="pwd" placeholder="กรุณาป้อนรหัสผ่าน" required> <br><br>
+
+            <label for="date">Date</label>
+            <input type="date" name="date" id="date" > <br><br>
+
+            <label for="url">Website</label>
+            <input type="url" name="url" id="url" placeholder="https://www.example.com"> <br><br>
+
+            <label for="address">ที่อยู่</label> <br>
+            <textarea name="address" id="address" cols="30" rows="5"></textarea> <br><br>
+            
+            <label for="color">สี</label>
+            <input type="color" name="color" id="color"><br><br>
+
+            <label for="photo">เลือกรูป</label> <br>
+            <input type="file" name="photo" id="photo"> <br><br>
+
+            <input type="submit">
+            <input type="reset">
+        </form>
+    </fieldset>
+
+    <fieldset style="background-color: rgb(206, 216, 230);">
+        <legend>Radio Button</legend>
+        <form action="" method="">
+            
+            <label>Gender :</label>
+            <input type="radio" name="gender" id="male" value="M">
+            <label for="male">ชาย</label>
+            <input type="radio" name="gender" id="female" value="F">
+            <label for="female">หญิง</label>
+
+            <br><br>
+            <input type="submit" value="ยืนยัน">
+        </form>
+    </fieldset>
+
+    <fieldset style="background-color: rgb(206, 216, 230);">
+        <legend>Checkbox</legend>
+        <form action="" method="">
+
+            <label>วิชาที่ชอบ</label>
+            <input type="checkbox" name="subject1" id="math" value="math">
+            <label for="math">คณิตศาสตร์</label>
+            <input type="checkbox" name="subject2" id="sci" value="sci">
+            <label for="sci">วิทยาศาสตร์</label>
+            <input type="checkbox" name="subject3" id="eng" value="eng">
+            <label for="eng">ภาษาอังกฤษ</label>
+
+            <br><br>
+            <button type="submit">ตกลง</button>
+            
+        </form>
+    </fieldset>
+
+    <fieldset style="background-color: rgb(206, 216, 230);">
+        <legend>Dropdown List [Selcet..Option..]</legend>
+        <form action="" method="">
+            <label for="province">จังหวัด</label>
+            <select name="province" id="province">
+                <option value="bkk">กรุงเทพหานคร</option>
+                <option value="nakhon pathom">นครปฐม</option>
+                <option value="khonkaen">ขอนแก่น</option>
+                <option value="chiangmai">เชียงใหม่</option>
+            </select>
+
+            <br><br>
+            <button type="submit">ตกลง</button>
+
+        </form>
+    </fieldset>
+    <a href="index.html">Back to Home</a>
+    
+    <!-- label มาคู่กับ input -->
+    <!-- for อ้างอิงถึง id -->
+    <!-- placeholder ตัวอย่างข้อความที่อยู่ในช่อง input -->
+    <!-- name ค่าแปลงตฃของตัวแปร-->
+    <!-- min ค่าน้อยสถด max ค่ามากสุด step เพิ่ม-ลดทีล้ะเท่าไหร่ -->
+    <!-- readonly อ่านได้เท่านั้น พิมพ์ไม่ได้ , value ใส่ค่ามีแค่คนเก็บข้อมูลที่เห็น -->
+    <!-- id ตรงกับ for -->
+    <!-- Select มาคู่กับ Option -->
+    <!-- cols กว้าง rows สูง -->
+</body>
+</html>
