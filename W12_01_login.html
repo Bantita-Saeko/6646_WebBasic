@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family:'Roboto','IBM Plex Sans Thai'  ; 
+            background: rgb(255,177,177);
+            background: radial-gradient(circle, rgba(255,177,177,1) 0%, rgba(255,238,238,1) 100%);
+           
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            display: flex;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgb(134, 134, 134);
+            
+            background-color: rgb(255, 255, 255);
+            width: 700px;
+        }
+        .left-side {
+            background-image: url(images/Tree.jpg);
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: darken;
+            background-color: rgb(177, 175, 175);
+
+            color: rgb(255, 255, 255);
+            text-align: center;
+            text-transform: uppercase;
+            padding: 20px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            
+            width: 60%;
+
+        }
+        .right-side {
+            padding: 40px;
+            width: 40%;
+
+            form {
+
+                    label {
+                        display: block;
+                        font-size: 14px;
+                        margin-bottom: 5px;
+                    }
+                    input {
+                        margin-bottom: 8px;
+                        width: 100%;
+                        padding: 6px;
+                        border: 1px solid rgb(226, 226, 226);
+                        box-sizing: border-box;
+                    }
+                    input[type="submit"] {
+                        background-color: rgb(85, 201, 56);
+                        border: 1px solid white;
+                        padding: 8px;
+                        border-radius: 8px;
+                        cursor: pointer;
+                    }
+                    input[type="submit"]:hover {
+                        background-color: rgb(59, 161, 34);
+                    }
+                    
+            }
+            a {
+                color: rgb(73, 119, 248);
+                text-decoration: none;
+            }
+            a:hover{
+                color: rgb(0, 0, 255);
+            }
+        }
+            
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <h2><span style="color: rgb(255, 192, 211);">Information</span> Technology</h2>
+            <p>ยินดีต้อนรับเข้าสู่เว็บไซต์การเรียนวิชาการออกแบบและพัฒนาเว็บไซต์</p>
+        </div>
+
+        <div class="right-side">
+            <h3>Login</h3>  
+            <form action="" method="post">
+                <!-- Username Label&Input -->
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter Your Username" required>
+                <!-- Password Lable&Input -->
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter Your Password" required>
+
+                <input type="submit" value="Login">
+
+                <p>Forgot <a href="#">Password?</a></p>
+                <p>Don't have an account? <a href="#">Register</a></p>
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>
