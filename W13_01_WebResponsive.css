@@ -126,32 +126,32 @@ nav {
     max-width: 1200px;
     margin: 50px auto;
     padding: 0 20px ;
+}
 
     /* Hero Section */
-    .hero {
-        display: flex;
-        justify-content: space-between; 
-        align-items: center;
+.hero {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
 
-        .left-side {
-            width: 55%;
-            /* border: 1px solid red; */
-            h1 {
-                color: var(--secondary-color);
-                font-size: 2.5rem;
-                margin-bottom: 24px;
-            }
-            p {
-                font-size: 1.2rem;
-                margin: 24px 0;
-            }
+    .left-side {
+        width: 55%;
+        /* border: 1px solid red; */
+        h1 {
+            color: var(--secondary-color);
+            font-size: 2.5rem;
+            margin-bottom: 24px;
         }
-        .right-side {
-            /* border: 1px solid rgb(0, 76, 255); */
-            width: 45%;
-            img {
-                width: 100%;
-            }
+        p {
+            font-size: 1.2rem;
+            margin: 24px 0;
+        }
+    }
+    .right-side {
+        /* border: 1px solid rgb(0, 76, 255); */
+        width: 45%;
+        img {
+            width: 100%;
         }
     }
 }
@@ -182,6 +182,11 @@ nav {
     justify-content: space-between;
     .item {
         width: 32%;
+        h3 {
+            color: var(--primary-color);
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
     }
 }
 
@@ -205,6 +210,13 @@ nav {
         font-size: 2rem;
         margin-bottom: 24px;
         color: var(--primary-color);
+    }
+    .item {
+        h3 {
+            color: var(--primary-color);
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
     }
 }
 .customize {
@@ -262,60 +274,178 @@ nav {
 
 footer {
     background-color: var(--background-footer);
+    color: var(--base-color-white);
+    padding: 20px 0;
 }
 
-.container-footer{
-    /* border: 1px solid red; */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+
     max-width: 1200px;
     margin: 0 auto;
-    align-items: center;
-    .hero-footer{
-        display: flex;
-        justify-content: space-between;
-        padding: 20px;
-        .left-side {
-            width: 50%;
-            img {
-                width: 30px;
-                height: auto;
-            }
-            h3 {
-                color: var(--base-color-white);
-                padding: 5px;
-                
-            }
-            p {
-                margin-top: 20px;
-                color: var(--base-color-white);
-            }
+}
 
-        }
-        .right-side {
-            width: 50%;
-            /* border: 1px solid red; */
-            display: flex;
-            .list {
-                /* border: 1px solid red; */
-                margin: 10px;
-                width: 30%;
-            }
-            h4 {
-                color: var(--base-color-white);
-                margin-bottom: 20px;
-            }
-            
-            li {
-                list-style: none;
-                line-height: 1.5rem;
-            }
-            a {
-                text-decoration: none;
-                color: var(--base-color-white);
-            }
-            a:hover {
-                color: var(--secondary-color);
-            }
+.footer-left {
+    h3 {
+        color: var(--secondary-color);
+        margin-bottom: 20px;
+    }
+}
 
+.footer-right {
+    display: flex;
+    gap: 40px;
+    a {
+        text-decoration: none;
+        color: var(--base-color-white);
+    }
+    a:hover {
+        color: var(--secondary-color);
+    }
+    ul {
+        list-style: none;
+        li {
+            margin-bottom: 4px;
         }
     }
+}
+
+.footer-item {
+    h4 {
+        margin-bottom: 20px;
+        font-size: 1.2rem;
+    }
+}
+
+.full-screen-menu {
+    display: none;
+}
+
+.hamburger-icon {
+    display: none;
+}
+
+
+/* Responsive for tablet */
+
+
+/* Responsive for mobile */
+
+@media screen and (max-width: 768px) {
+
+    .hamburger-icon {
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    .header-container {
+        padding: 5px 10px;
+    }
+
+    .header-button {
+        display: none;
+    }
+
+    nav {
+        display: none;
+    }
+    .hero {
+        flex-direction: column;    
+        .left-side{
+            width: 100%;
+        }    
+        .right-side {
+            width: 50%;
+        }
+    }
+
+
+    .solution-content {
+        flex-direction: column;
+
+        .item {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+    .customize {
+        flex-direction: column;
+        .right-side {
+            width: 50%;
+        }
+        .left-side {
+            width: 100%;
+        }
+    }
+    .support {
+        flex-direction: column;
+        .right-side {
+            width: 100%;
+        }
+        .left-side {
+            width: 50%;
+        }
+    }
+    .discover-content {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .footer-container {
+        flex-direction: column;
+        .footer-right {
+            flex-direction: column;
+        }
+        .footer-left {
+            padding: 20px;
+        }
+    }
+    .footer-item {
+        margin-top: 10px;
+        padding: 20px;
+    }
+    
+    /* เมนูเต็มจอ */
+    .full-screen-menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.9); /* พื้นหลังสีดำโปร่งแสง */
+        color: white;
+        text-align: center;
+        padding-top: 50px;
+        z-index: 999;
+    }
+
+    .full-screen-menu ul {
+        list-style: none;
+        padding-top: 50px;
+    }
+
+    .full-screen-menu ul li {
+        margin: 20px 0;
+    }
+
+    .full-screen-menu ul li a {
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .full-screen-menu ul li a:hover {
+        color: var(--secondary-color);
+    }
+
+    /* ปุ่มปิดเมนู */
+    .close-btn {
+        font-size: 32px;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        cursor: pointer;
+    }
+
 }
